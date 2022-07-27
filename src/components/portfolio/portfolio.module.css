@@ -1,0 +1,40 @@
+.title{
+    font-size: 3.2rem;
+    font-family: pretendard;
+    color: #202020;
+    font-weight: 600;
+    text-align: center;
+}
+
+.Portfolio{
+    width: 37.2rem;
+    margin: 0 auto;
+}
+
+.portImg{
+    width: 37.2rem;
+    height: 24.5rem;
+    position: relative;
+}
+
+.textZone{
+    position: absolute;
+    transform: translate(32px, -152px);
+    width: 33rem;
+    font-family: pretendard;
+    display: none;
+}
+.portTitle{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.portText{
+    color: #E9E9E9;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+
+
+

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "pretendard";
+  src: url(/public/font/Pretendard-Regular.otf);
+}
+@font-face {
+  font-family: "jost";
+  src: url(/public/font/Jost-900-Black.ttf);
+}
+body{
+  margin: 0;
+}
+
+.App{
+  background-image: url(/public/img/background.png);
+  background-attachment: fixed;
+  width: 118.9rem;
+  margin: 0 auto;
+}
+.adiotInfo{
+  background-color: white;
+}

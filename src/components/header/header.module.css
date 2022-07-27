@@ -1,0 +1,33 @@
+.headerBack{
+    position: relative;
+    width: 75rem;
+    min-height: 51.4rem;
+    margin: 0 auto;
+}
+
+.home{
+    position: absolute;
+    top: 1.6rem;
+    left: -19.5rem;
+    z-index: 1;
+    background-color: transparent;
+}
+.headerDiv{
+    margin: 0 auto;
+    width: 75rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin-top: 16rem;
+    position: absolute;
+    margin-bottom: 19rem;
+    z-index: 1;
+    background-color: transparent;
+}
+.logoText, .moveLogo{
+    width: 35rem;
+}
+
+@media screen and (max-width: 48rem) {
+    
+}

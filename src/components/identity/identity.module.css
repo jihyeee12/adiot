@@ -1,0 +1,131 @@
+.identity,.workframe,.service{
+    margin: 0 auto;
+    width: 75rem;
+}
+
+.identity{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 9.7rem 0;
+}
+
+.identityImg{
+    margin-top: 1rem;
+    font-family: pretendard;
+    font-weight: 600;
+    color: #202020;
+    font-size: 3.25rem;
+}
+
+.identityZone{
+    text-align: right;
+}
+.indentityText{
+    width: 14.4rem;
+    font-family: pretendard;
+    display: inline-block;
+    margin: 2rem 1.2rem;
+    text-align: left;
+}
+.Title{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #303030;
+    margin: 0.4rem 0;
+}
+.important{
+    color: #0C75F5;
+}
+.text{
+    color: #707070;
+    font-weight: 500;
+    font-size: 0.94rem;
+}
+
+.service{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 9.7rem;
+    position: relative;
+}
+
+.itImg{
+    position: relative;
+}
+.itText{
+    position: absolute;
+    transform: translate(12px, -52px);
+    z-index: 1;
+    color: #FFFFFF;
+    font-family: pretendard;
+    font-size: 1.1rem;
+}
+.serviceTitle{
+    font-family: pretendard;
+    font-weight: 600;
+    font-size: 3.25rem;
+    margin-top: 0;
+}
+.company{
+    color: #0097FF;
+}
+.serviceText{
+    font-family: pretendard;
+    font-size: 1.1rem;
+    color: #202020;
+    line-height: 1.4rem;
+    width: 30rem;
+}
+.serviceCard{
+    display: grid;
+    align-content: space-around;
+    align-items: center;
+}
+.serviceIcon1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.serviceIcon2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-bottom: 1rem;
+}
+.serviceIcon3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.serviceContent{
+    position: absolute;
+    right: 0.5rem;
+}
+.workframe{
+    padding-bottom: 9.7rem;
+}
+.frameTitle{
+    font-size: 2rem;
+    font-weight: 600;
+    width: 12.8rem;
+    padding-bottom: 0.4rem;
+    color: #202020;
+    font-family: pretendard;
+    border-bottom: 2px solid #202020;
+}
+
+@media screen and (max-width: 48rem) {
+    .identity,.workframe,.service{
+        width: 48rem;
+    }
+
+    .identity, .service{
+        display: block;
+    }
+    .indentityText{
+        display: block;
+    }
+}

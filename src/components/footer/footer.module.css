@@ -1,0 +1,38 @@
+
+.footer{
+    width: 75rem;
+    min-height: 42rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.footer h3{
+    font-family: jost;
+    font-size: 2.6rem;
+    color: #303030;
+    padding-top: 9.4rem;
+}
+.footerText{
+    font-family: pretendard;
+    font-size: 1.1rem;
+    color: #303030;
+    line-height: 1.7rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+.email{
+    border: none;
+    width: 27.3rem;
+    height: 3.25rem;
+    border-radius: 1.7rem;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #303030;
+    font-family: pretendard;
+    margin-bottom: 10rem;
+}
+.footerLogo{
+    font-family: pretendard;
+    font-size: 0.9rem;
+    color: #505050;
+}
