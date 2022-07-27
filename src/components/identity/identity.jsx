@@ -65,7 +65,7 @@ class Identity extends Component {
             </div>
             <div className={styles.workframe}>
                 <h3 className={styles.frameTitle}>WORK FRAME</h3>
-                <img src="/img/workframe.png" alt="workframe" />
+                <img className={styles.frameImg} src="/img/workframe.png" alt="workframe" />
             </div>
             <Portfolio/>
             <Location/>

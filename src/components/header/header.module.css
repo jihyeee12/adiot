@@ -28,6 +28,34 @@
     width: 35rem;
 }
 
-@media screen and (max-width: 48rem) {
-    
+@media screen and (max-width: 480px) {
+    .headerBack{
+        width: 30rem;
+        min-height: 29rem;
+    }
+    .home{
+        top: 24px;
+        left: 34%;
+        width: 9rem;
+    }
+    .headerDiv{
+        margin: 5.5rem 1rem;
+        width: 27rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        text-align: left;
+    }
+    .right{
+        width: 100%;
+        text-align: right;
+    }
+    .logoText{
+        width: 22rem;
+    }
+    .moveLogo{
+        width: 13rem;
+    }
 }

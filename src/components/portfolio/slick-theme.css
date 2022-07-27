@@ -197,3 +197,18 @@
     opacity: .75;
     color: black;
 }
+
+@media screen and (max-width: 480px) {
+    .slick-prev, .slick-next{
+        width: 2rem;
+        height: 2rem;
+    }
+    .slick-prev{
+        left: 20px;
+        top: 104%;
+    }
+    .slick-next{
+        top: 104%;
+        right: 20px;
+    }
+}

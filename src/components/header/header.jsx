@@ -8,8 +8,12 @@ class Header extends Component {
                 <div className={styles.headerBack}>
                     <img className={styles.home} src="/img/logo.png" alt="logo" />
                     <div className={styles.headerDiv}>
-                        <img className={styles.logoText} src="/img/adiotText.png" alt="adiot" />
-                        <img  className={styles.moveLogo}src="/img/adiotLogo.png" alt="adiotLogo" />
+                        <div className={styles.left}>
+                            <img className={styles.logoText} src="/img/adiotText.png" alt="adiot" />
+                        </div>
+                        <div className={styles.right}>
+                            <img  className={styles.moveLogo}src="/img/adiotLogo.png" alt="adiotLogo" />
+                        </div>
                     </div>
                 </div>
             </>

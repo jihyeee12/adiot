@@ -1,12 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './portfolio.module.css';
 import Slider from "react-slick";
 import "./slick.css";
 import "./slick-theme.css";
+import { useMediaQuery } from 'react-responsive';
 
-export default class Portfolio extends Component {
-    
-    render() {
+    const Portfolio = () => {
+        const isMobile = useMediaQuery({
+            query: '(max-width: 480px)'
+        });
+
         const settings = {
             dots: true,
             className: "center",
@@ -16,11 +19,23 @@ export default class Portfolio extends Component {
             slidesToShow: 3,
             speed: 500
         };
+        const mobilSetting ={
+            dots: true,
+            className: "one",
+            centerMode: true,
+            infinite: true,
+            centerPadding: "5px",
+            slidesToShow: 1,
+            speed: 500
+        }
 
         return (
             <>
                 <h3 className={styles.title}>PORTFOLIO</h3>
-                <Slider {...settings}>
+                <Slider 
+                {...isMobile? {...mobilSetting} : {...settings}}
+                
+                >
                     <div className={styles.Portfolio}>
                         <img className={styles.portImg} src="/img/portfolio/test.png" alt="portfolio" />
                         <div className={styles.textZone}>
@@ -84,6 +99,7 @@ export default class Portfolio extends Component {
                     </Slider>
             </>
         );
-    }
 }
+
+export default Portfolio;
 

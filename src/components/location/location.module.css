@@ -47,4 +47,41 @@
     font-weight: 400;
     color: #202020;
     margin-top: 0.3rem;
+    width: 62%;
+}
+
+@media screen and (max-width: 480px) {
+    .location{
+        width: 30rem;
+        box-sizing: border-box;
+        padding: 4rem 1rem;
+    }
+    .locationTitle{
+        font-size: 1.625rem;
+        margin: 0;
+    }
+    .maps{
+        margin: 1.5rem 0;
+        height: 15rem;
+    }
+    .company{
+        display: flex;
+        flex-direction: column;
+    }
+    .companyInfo{
+        display: flex;
+        flex-direction: column;
+    }
+    .companyInfo h4{
+        margin-bottom: 0;
+        font-size: 1.25rem;
+    }
+    .infoBox{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+    }
 }

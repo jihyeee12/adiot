@@ -35,6 +35,24 @@
     line-height: 1.4rem;
 }
 
-
+@media screen and (max-width: 480px) {
+    .title{
+        font-size: 1.875rem;
+    }
+    .portImg{
+        width: 29.2rem;
+        height: 19.5rem;
+    }
+    .portTitle{
+        font-size: 1.125rem;
+    }
+    .portText{
+        font-size: 0.94rem;
+    }
+    .textZone{
+        width: 26rem;
+        transform: translate(27px, -166px);
+    }
+}
 
 

@@ -36,3 +36,21 @@
     font-size: 0.9rem;
     color: #505050;
 }
+@media screen and (max-width: 480px) {
+    .footer{
+        width: 30rem;
+        min-height: 19rem;
+    }
+    .footer h3{
+        padding: 0;
+        font-size: 1.875rem;
+        margin: 4rem 0 2rem 0;
+    }
+    .footerText{
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .email{
+        margin-bottom: 3rem;
+    }
+}

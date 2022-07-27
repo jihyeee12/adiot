@@ -117,15 +117,63 @@
     border-bottom: 2px solid #202020;
 }
 
-@media screen and (max-width: 48rem) {
-    .identity,.workframe,.service{
-        width: 48rem;
+@media screen and (max-width: 480px) {
+    .identity,.workframe{
+        width: 30rem;
+        padding-bottom: 4rem;
     }
 
     .identity, .service{
         display: block;
     }
+    .identity{
+        padding: 4rem 1rem;
+    }
+    .identityImg{
+        margin-top: 0;
+        margin-bottom: 2rem;
+        font-size: 1.875rem;
+    }
     .indentityText{
         display: block;
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .text{
+        font-size: 0.94rem;
+    }
+    .service{
+        width: 28rem;
+        padding-bottom: 4rem;
+    }
+    .itImg{
+        width: 13rem;
+    }
+    .serviceCard{
+        justify-items: center;
+    }
+    .itText{
+        font-size: 1rem;
+    }
+    .serviceContent{
+        position: revert;
+        margin-top: 1.5rem;
+    }
+    .serviceTitle{
+        margin-bottom: 1.5rem;
+        font-size: 1.875rem;
+    }
+    .serviceText{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    .workframe{
+        margin: 0 1rem;
+    }
+    .frameTitle{
+        font-size: 1.625rem;
+    }
+    .frameImg{
+        width: 27rem;
     }
 }
