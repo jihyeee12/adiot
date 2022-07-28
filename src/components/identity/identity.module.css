@@ -1,12 +1,12 @@
 .identity,.workframe,.service{
     margin: 0 auto;
-    width: 75rem;
+    width: 62vw;
 }
 
 .identity{
     display: grid;
     grid-template-columns: 20% 80%;
-    padding: 9.7rem 0;
+    padding: 150px 0;
 }
 
 .identityImg{
@@ -21,7 +21,7 @@
     text-align: right;
 }
 .indentityText{
-    width: 14.4rem;
+    width: calc(100%/4);
     font-family: pretendard;
     display: inline-block;
     margin: 2rem 1.2rem;
@@ -51,19 +51,20 @@
 
 .itImg{
     position: relative;
+    width: 95%;
 }
 .itText{
     position: absolute;
-    transform: translate(12px, -52px);
+    transform: translate(1vw, -3vw);
     z-index: 1;
     color: #FFFFFF;
     font-family: pretendard;
-    font-size: 1.1rem;
+    font-size: 1vw;
 }
 .serviceTitle{
     font-family: pretendard;
     font-weight: 600;
-    font-size: 3.25rem;
+    font-size: 3vw;
     margin-top: 0;
 }
 .company{
@@ -71,10 +72,10 @@
 }
 .serviceText{
     font-family: pretendard;
-    font-size: 1.1rem;
+    font-size: 1vw;
     color: #202020;
     line-height: 1.4rem;
-    width: 30rem;
+    width: 100%;
 }
 .serviceCard{
     display: grid;
@@ -101,79 +102,120 @@
     grid-row-end: 3;
 }
 .serviceContent{
-    position: absolute;
-    right: 0.5rem;
+    width: 100%;
+    padding-left: 6%;
+    box-sizing: border-box;
 }
 .workframe{
-    padding-bottom: 9.7rem;
+    padding-bottom: 150px;
 }
 .frameTitle{
     font-size: 2rem;
     font-weight: 600;
-    width: 12.8rem;
+    width: 13rem;
     padding-bottom: 0.4rem;
     color: #202020;
     font-family: pretendard;
     border-bottom: 2px solid #202020;
 }
-
-@media screen and (max-width: 480px) {
-    .identity,.workframe{
-        width: 30rem;
-        padding-bottom: 4rem;
+.frameImg{
+    width: 100%;
+}
+@media screen and (max-width: 1024px) {
+    .identityImg{
+        font-size: 2.5rem;
     }
+    .identity,.workframe{
+        width: 100vw;
+        padding-bottom: 64px;
+    }
+    .identity{
+        padding: 64px 16px;
+        box-sizing: border-box;
+    }
+    .service{ 
+        width: 100vw;
+        padding: 32px 16px 64px;
+        box-sizing: border-box;
+    }
+    .serviceTitle{
+        font-size: 2.5rem;
+    }
+    .serviceText{
+        font-size: 1rem;
+    }
+    .workframe{
+        padding: 24px 16px;
+        box-sizing: border-box;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .identity{
+        display: flex;
+        flex-direction: column;
+    }
+    .indentityText{
+        width: 38%;
+        display: block;
+        margin-right: 10%;
+        margin-left: 0;
+        float: left;
+    }
+    .itText{
+        transform: translate(1vw, -3vw);
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 479px) {
 
     .identity, .service{
         display: block;
     }
-    .identity{
-        padding: 4rem 1rem;
-    }
+    
     .identityImg{
         margin-top: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 32px;
         font-size: 1.875rem;
     }
     .indentityText{
         display: block;
         width: 100%;
-        margin: 2rem 0;
+        margin-top: 2em;
+        margin-bottom: 0;
     }
     .text{
         font-size: 0.94rem;
     }
     .service{
-        width: 28rem;
-        padding-bottom: 4rem;
+        display: flex;
+        flex-direction: column-reverse;
     }
     .itImg{
-        width: 13rem;
+        width: 44vw;
     }
     .serviceCard{
         justify-items: center;
     }
     .itText{
-        font-size: 1rem;
+        transform: translate(2vw, -7vw);
     }
     .serviceContent{
         position: revert;
-        margin-top: 1.5rem;
+        margin-top: 24px;
+        width: 100%;
+        padding-left: 0;
     }
     .serviceTitle{
-        margin-bottom: 1.5rem;
+        margin-bottom: 24px;
         font-size: 1.875rem;
     }
     .serviceText{
         width: 100%;
         font-size: 0.9rem;
     }
-    .workframe{
-        margin: 0 1rem;
-    }
     .frameTitle{
         font-size: 1.625rem;
-    }
-    .frameImg{
-        width: 27rem;
     }
 }

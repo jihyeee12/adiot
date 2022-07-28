@@ -9,7 +9,7 @@ class Footer extends Component {
             <>
                 <div className={styles.footer}>
                     <h3>CONTACT US</h3>
-                    <p className={styles.footerText}>다양한 제휴 제안을 간략한 내용과 함께 아래 메일로 보내주시면 <br></br>
+                    <p className={styles.footerText}>다양한 제휴 제안을 간략한 내용과 함께 아래 메일로 보내주시면
                         확인 후 영업일 기준 2-3일 내로 연락드리겠습니다.
                     </p>
                     <input className={styles.email} type="text" value={value} readOnly/>

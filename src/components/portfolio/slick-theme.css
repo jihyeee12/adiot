@@ -74,7 +74,7 @@
 
 .slick-prev
 {
-    left: 36.1rem;
+    left: 29%;
 }
 [dir='rtl'] .slick-prev
 {
@@ -92,7 +92,7 @@
 
 .slick-next
 {
-    right: 36.1rem;
+    right: 29%;
 }
 [dir='rtl'] .slick-next
 {
@@ -198,17 +198,31 @@
     color: black;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
+    .slick-prev, .slick-next{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .slick-prev{
+        left: 3%;
+        top: 104%;
+    }
+    .slick-next{
+        top: 104%;
+        right: 3%;
+    }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 479px) {
     .slick-prev, .slick-next{
         width: 2rem;
         height: 2rem;
     }
     .slick-prev{
         left: 20px;
-        top: 104%;
     }
     .slick-next{
-        top: 104%;
         right: 20px;
     }
 }

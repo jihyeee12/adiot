@@ -1,7 +1,7 @@
 
 .footer{
-    width: 75rem;
-    min-height: 42rem;
+    width: 62vw;
+    min-height: 40vh;
     text-align: center;
     margin: 0 auto;
 }
@@ -9,20 +9,24 @@
     font-family: jost;
     font-size: 2.6rem;
     color: #303030;
-    padding-top: 9.4rem;
+    padding-top: 4em;
+    margin: 0;
+    padding-bottom: 2em;
+    box-sizing: border-box;
 }
 .footerText{
     font-family: pretendard;
     font-size: 1.1rem;
     color: #303030;
     line-height: 1.7rem;
-    margin-bottom: 3rem;
     font-weight: 600;
+    margin: 7vh auto;
+    width: 100%;
 }
 .email{
     border: none;
-    width: 27.3rem;
-    height: 3.25rem;
+    width: 22vw;
+    height: 5vh;
     border-radius: 1.7rem;
     background-color: #ffffff;
     text-align: center;
@@ -35,22 +39,38 @@
     font-family: pretendard;
     font-size: 0.9rem;
     color: #505050;
+    padding: 16px auto;
+    margin: 0;
+    padding-bottom: 10px;
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 1024px) {
     .footer{
-        width: 30rem;
-        min-height: 19rem;
+        width: 100vw;
+        min-height: 47vh;
     }
     .footer h3{
-        padding: 0;
         font-size: 1.875rem;
-        margin: 4rem 0 2rem 0;
     }
     .footerText{
         font-size: 1rem;
-        margin-bottom: 1.5rem;
+        margin: 4vh auto;
+        width: 100%;
+        padding: 0 8% 24px;
+        box-sizing: border-box;
+        margin: 0 auto;
     }
     .email{
-        margin-bottom: 3rem;
+        width: 62%;
+        font-size: 1.125rem;
+        margin-bottom: 64px;
+        height: 5vh;
+    }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 479px) {
+    .footer h3{
+        font-size: 1.875rem;
     }
 }

@@ -1,61 +1,90 @@
 .headerBack{
     position: relative;
-    width: 75rem;
-    min-height: 51.4rem;
+    width: 62vw;
+    min-height: 93vh;
     margin: 0 auto;
 }
 
 .home{
     position: absolute;
-    top: 1.6rem;
-    left: -19.5rem;
+    top: 25px;
+    left: -17vw;
     z-index: 1;
     background-color: transparent;
 }
 .headerDiv{
-    margin: 0 auto;
-    width: 75rem;
+    margin: 10em auto;
+    width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
-    margin-top: 16rem;
     position: absolute;
-    margin-bottom: 19rem;
     z-index: 1;
     background-color: transparent;
 }
 .logoText, .moveLogo{
-    width: 35rem;
+    width: 100%;
 }
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
     .headerBack{
-        width: 30rem;
-        min-height: 29rem;
+        width: 100vw;
+        min-height: 100vh;
     }
     .home{
-        top: 24px;
-        left: 34%;
-        width: 9rem;
+        top: 5%;
+        left: 37%;
+        width: 22vw;
     }
     .headerDiv{
-        margin: 5.5rem 1rem;
-        width: 27rem;
+        padding: 8em 0;
+        margin: 0;
+        width: 100vw;
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
+    }
+    .left, .right{
+        width: 100vw;
+        box-sizing: border-box;
+        padding: 16px;
     }
     .left{
-        width: 100%;
         text-align: left;
     }
     .right{
-        width: 100%;
         text-align: right;
     }
     .logoText{
-        width: 22rem;
+        width: 46%;
     }
     .moveLogo{
-        width: 13rem;
+        width: 40%;
+    }   
+}
+
+@media screen and (max-width: 767px) {
+    .headerDiv{
+        padding: 4em 0;
     }
+}
+
+@media screen and (min-width: 300px) and (max-width: 479px) {
+    .headerBack{
+        min-height: 50vh;
+    }
+    .headerDiv{
+        padding: 4em 0;
+    }
+    .home{
+        top: 24px;
+        left: 140px;
+        width: 36vw;
+    }
+    .logoText{
+        width: 60vw;
+    }
+    .moveLogo{
+        width: 44vw;
+    }
+    
 }

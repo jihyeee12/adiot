@@ -9,6 +9,9 @@ import { useMediaQuery } from 'react-responsive';
         const isMobile = useMediaQuery({
             query: '(max-width: 480px)'
         });
+        const istablet = useMediaQuery({
+            query: '(max-width: 1024px)'
+        });
 
         const settings = {
             dots: true,
@@ -17,7 +20,7 @@ import { useMediaQuery } from 'react-responsive';
             infinite: true,
             centerPadding: "60px",
             slidesToShow: 3,
-            speed: 500
+            speed: 500,
         };
         const mobilSetting ={
             dots: true,
@@ -34,7 +37,7 @@ import { useMediaQuery } from 'react-responsive';
                 <h3 className={styles.title}>PORTFOLIO</h3>
                 <Slider 
                 {...isMobile? {...mobilSetting} : {...settings}}
-                
+                {...istablet? {...mobilSetting} : {...settings}}
                 >
                     <div className={styles.Portfolio}>
                         <img className={styles.portImg} src="/img/portfolio/test.png" alt="portfolio" />

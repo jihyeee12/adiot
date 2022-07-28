@@ -7,20 +7,19 @@
 }
 
 .Portfolio{
-    width: 37.2rem;
     margin: 0 auto;
 }
 
 .portImg{
-    width: 37.2rem;
-    height: 24.5rem;
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
 .textZone{
     position: absolute;
     transform: translate(32px, -152px);
-    width: 33rem;
+    width: 27vw;
     font-family: pretendard;
     display: none;
 }
@@ -35,22 +34,31 @@
     line-height: 1.4rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
+    .title{
+        font-size: 2.5rem;
+    }
+    .textZone{
+        width: 92vw;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 479px) {
     .title{
         font-size: 1.875rem;
     }
     .portImg{
-        width: 29.2rem;
-        height: 19.5rem;
+        width: 97vw;
+        height: 34vh;
     }
     .portTitle{
         font-size: 1.125rem;
     }
     .portText{
-        font-size: 0.94rem;
+        font-size: 0.8rem;
     }
     .textZone{
-        width: 26rem;
+        width: 85vw;
         transform: translate(27px, -166px);
     }
 }
