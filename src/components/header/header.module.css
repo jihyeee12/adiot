@@ -29,6 +29,9 @@
     .headerBack{
         width: 100vw;
         min-height: 100vh;
+        background-image: url(/public/img/tabletBack.png);
+        background-position: center;
+        background-size: cover;
     }
     .home{
         top: 5%;
@@ -39,14 +42,16 @@
         padding: 8em 0;
         margin: 0;
         width: 100vw;
+        height: 100%;
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
+        justify-content: center;
     }
     .left, .right{
         width: 100vw;
         box-sizing: border-box;
-        padding: 16px;
+        padding: 0px 16px;
     }
     .left{
         text-align: left;
@@ -54,37 +59,47 @@
     .right{
         text-align: right;
     }
-    .logoText{
-        width: 46%;
+    .logoText, .moveLogo{
+        width: 52%;
     }
-    .moveLogo{
-        width: 40%;
-    }   
+      
 }
 
 @media screen and (max-width: 767px) {
     .headerDiv{
         padding: 4em 0;
     }
+    .headerBack{
+        min-height: 60vh;
+        background-image: url(/public/img/767Back.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .logoText{
+        width: 46%;
+    }
+    .moveLogo{
+        width: 40%;
+    } 
 }
 
-@media screen and (min-width: 300px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
     .headerBack{
         min-height: 50vh;
+        background-image: url(/public/img/mobileBack.png);
     }
     .headerDiv{
         padding: 4em 0;
     }
     .home{
-        top: 24px;
-        left: 140px;
+        left: 33%;
         width: 36vw;
     }
     .logoText{
-        width: 60vw;
+        width: 51%;
     }
     .moveLogo{
-        width: 44vw;
+        width: 46%;
     }
     
 }

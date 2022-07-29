@@ -14,8 +14,10 @@ body{
 
 .App{
   width: 100vw;
+  height: auto;
   background-image: url(/public/img/background.png);
   background-attachment: fixed;
+  background-repeat: no-repeat;
   margin: 0 auto;
   background-position: center;
   background-size: cover;
@@ -26,19 +28,8 @@ body{
 
 @media screen and (max-width: 1024px) {
   .App{
-    background-image: url(/public/img/tabletBack.png);
+    background-image: none; 
   }
 }
 
-@media screen and (max-width: 767px) {
-  .App{
-    background-image: url(/public/img/767Back.png);
-  } 
-}
-
-@media screen and (min-width: 300px) and (max-width: 479px) {
-  .App{
-    background-image: url(/public/img/mobileBack.png);
-  }
-}
 

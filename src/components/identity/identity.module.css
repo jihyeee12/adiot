@@ -14,7 +14,7 @@
     font-family: pretendard;
     font-weight: 600;
     color: #202020;
-    font-size: 3.25rem;
+    font-size: 3vw;
 }
 
 .identityZone{
@@ -122,9 +122,6 @@
     width: 100%;
 }
 @media screen and (max-width: 1024px) {
-    .identityImg{
-        font-size: 2.5rem;
-    }
     .identity,.workframe{
         width: 100vw;
         padding-bottom: 64px;
@@ -138,9 +135,7 @@
         padding: 32px 16px 64px;
         box-sizing: border-box;
     }
-    .serviceTitle{
-        font-size: 2.5rem;
-    }
+    
     .serviceText{
         font-size: 1rem;
     }
@@ -148,10 +143,18 @@
         padding: 24px 16px;
         box-sizing: border-box;
     }
-    
+    .serviceCard{
+        align-content: center;
+    }
+    .serviceIcon2{
+        margin-bottom: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 767px) {
+    .identityImg{
+        font-size: 5vw;
+    }
     .identity{
         display: flex;
         flex-direction: column;
@@ -164,11 +167,14 @@
         float: left;
     }
     .itText{
-        transform: translate(1vw, -3vw);
+        transform: translate(1vw, -4vw);
+    }
+    .serviceTitle{
+        font-size: 5vw;
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
 
     .identity, .service{
         display: block;

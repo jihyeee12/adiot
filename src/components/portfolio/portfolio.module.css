@@ -1,5 +1,5 @@
 .title{
-    font-size: 3.2rem;
+    font-size: 3vw;
     font-family: pretendard;
     color: #202020;
     font-weight: 600;
@@ -35,18 +35,12 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .title{
-        font-size: 2.5rem;
-    }
     .textZone{
         width: 92vw;
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 479px) {
-    .title{
-        font-size: 1.875rem;
-    }
+@media screen and (max-width: 479px) {
     .portImg{
         width: 97vw;
         height: 34vh;
